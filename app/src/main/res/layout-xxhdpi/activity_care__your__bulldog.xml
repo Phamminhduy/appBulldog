@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phamm.bulldog.Care_Your_Bulldog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/cover_avatar"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:src="@drawable/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgAvatar"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgAvatar"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:text="@string/_2_hours_to_eat_food"
+            android:textColor="#ffffff"
+            tools:ignore="RtlHardcoded" />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@drawable/ic_love"
+            android:layout_alignTop="@+id/imgAvatar"
+            android:layout_toStartOf="@+id/textView6"
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txtNameDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milo"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/imageView2"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignBottom="@+id/imageView2"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/u"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginEnd="39dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/layout_width_400"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/btnHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_xxhdpi"
+            android:layout_weight="1"
+            android:background="@drawable/heatlth"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_xxhdpi"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/gallery"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/layout_width_400"
+        android:layout_height="@dimen/layout_height_xxhdpi"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/btnReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_xxhdpi"
+            android:background="@drawable/reminder"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_xxhdpi"
+            android:background="@drawable/detail"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+    </LinearLayout>
+
+</RelativeLayout>

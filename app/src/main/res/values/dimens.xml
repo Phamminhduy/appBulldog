@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width">350dp</dimen>
+    <dimen name="layout_width_400">400dp</dimen>
+    <dimen name="layout_width_450">450dp</dimen>
+    <dimen name="layout_height_hdpi">110dp</dimen>
+    <dimen name="layout_height_xxxhdpi">170dp</dimen>
+    <dimen name="layout_height_xxhdpi">170dp</dimen>
+</resources>
