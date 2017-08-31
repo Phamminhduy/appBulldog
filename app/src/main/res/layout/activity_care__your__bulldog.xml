@@ -7,7 +7,7 @@
     tools:context="com.example.phamm.bulldog.Care_Your_Bulldog">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="194dp"
+        android:layout_height="@dimen/layout_height_background_RelativeLayout_2"
         android:background="@drawable/cover_avatar"
         android:id="@+id/relativeLayout"
         android:layout_alignParentTop="true"
@@ -74,27 +74,27 @@
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/layout_marginTop_1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_below="@+id/relativeLayout"
         android:orientation="horizontal"
-        android:layout_width="@dimen/layout_width"
+        android:layout_width="@dimen/layout_width_linearLayout"
         android:layout_height="wrap_content"
         android:weightSum="2"
         tools:ignore="RtlHardcoded">
         <Button
             android:id="@+id/btnHealth"
-            android:layout_width="wrap_content"
-            android:layout_height="159dp"
+            android:layout_width="@dimen/layout_width_Button"
+            android:layout_height="@dimen/layout_height_Button"
             android:layout_weight="1"
             android:background="@drawable/heatlth"
             tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/btnGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="159dp"
+            android:layout_width="@dimen/layout_width_Button"
+            android:layout_height="@dimen/layout_height_Button"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@drawable/gallery"
@@ -103,24 +103,24 @@
     <LinearLayout
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="@dimen/layout_marginTop_2"
         android:layout_below="@id/linearLayout"
         android:orientation="horizontal"
-        android:layout_width="@dimen/layout_width"
+        android:layout_width="@dimen/layout_width_linearLayout"
         android:layout_height="wrap_content"
         tools:ignore="RtlHardcoded">
         <Button
             android:id="@+id/btnReminder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layout_width_Button"
+            android:layout_height="@dimen/layout_height_Button"
             android:background="@drawable/reminder"
             android:layout_weight="1"
             tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/btnDetails"
             android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layout_width_Button"
+            android:layout_height="@dimen/layout_height_Button"
             android:background="@drawable/detail"
             android:layout_weight="1"
             tools:ignore="ButtonStyle,RtlHardcoded" />
