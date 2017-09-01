@@ -1,129 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.phamm.bulldog.Care_Your_Bulldog">
-    <RelativeLayout
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layout_height_background_RelativeLayout_2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@drawable/cover_avatar"
         android:id="@+id/relativeLayout"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        tools:ignore="UselessParent">
-
-        <ImageView
+        tools:ignore="DisableBaselineAlignment,ObsoleteLayoutParam,UselessParent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights,UseCompoundDrawables">
+            <ImageView
             android:src="@drawable/avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="67dp"
             android:layout_marginTop="20dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/imgAvatar"
             tools:ignore="ContentDescription" />
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:text="@string/_2_hours_to_eat_food"
+                android:textColor="#ffffff"
+                tools:ignore="RtlHardcoded" /></LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imgAvatar"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="15dp"
-            android:textSize="15sp"
-            android:text="@string/_2_hours_to_eat_food"
-            android:textColor="#ffffff"
-            tools:ignore="RtlHardcoded" />
-        <ImageView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/imageView2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="33dp"
-            app:srcCompat="@drawable/ic_love"
-            android:layout_alignTop="@+id/imgAvatar"
-            android:layout_toStartOf="@+id/textView6"
-            tools:ignore="ContentDescription,VectorDrawableCompat" />
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/txtNameDog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/milo"
-            android:textSize="24sp"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:layout_toStartOf="@+id/imageView2"
-            android:layout_alignTop="@+id/textView6"
-            android:layout_alignBottom="@+id/imageView2"
-            tools:ignore="RelativeOverlap" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/txtNameDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milo"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_love"
+                tools:ignore="ContentDescription,VectorDrawableCompat" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/u"
-            android:textSize="24sp"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:layout_marginEnd="39dp"
-            android:layout_alignTop="@+id/imageView2"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/u"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
+        android:layout_weight="1"
         android:id="@+id/linearLayout"
-        android:layout_marginTop="@dimen/layout_marginTop_1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="@dimen/marginTop_linearLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
-        android:layout_width="@dimen/layout_width_linearLayout"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_linearLayout"
         android:weightSum="2"
-        tools:ignore="RtlHardcoded">
+        android:gravity="center"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
         <Button
             android:id="@+id/btnHealth"
-            android:layout_width="@dimen/layout_width_Button"
-            android:layout_height="@dimen/layout_height_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/heatlth"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,NestedWeights" />
 
         <Button
             android:id="@+id/btnGallery"
-            android:layout_width="@dimen/layout_width_Button"
-            android:layout_height="@dimen/layout_height_Button"
-            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:layout_weight="1"
             android:background="@drawable/gallery"
             tools:ignore="ButtonStyle,RtlHardcoded" />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="@dimen/layout_marginTop_2"
-        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_linearLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_width="@dimen/layout_width_linearLayout"
-        android:layout_height="wrap_content"
-        tools:ignore="RtlHardcoded">
+        android:weightSum="2"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
         <Button
             android:id="@+id/btnReminder"
-            android:layout_width="@dimen/layout_width_Button"
-            android:layout_height="@dimen/layout_height_Button"
-            android:background="@drawable/reminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            android:background="@drawable/reminder"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
         <Button
             android:id="@+id/btnDetails"
-            android:layout_marginLeft="10dp"
-            android:layout_width="@dimen/layout_width_Button"
-            android:layout_height="@dimen/layout_height_Button"
-            android:background="@drawable/detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:layout_weight="1"
+            android:background="@drawable/detail"
             tools:ignore="ButtonStyle,RtlHardcoded" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

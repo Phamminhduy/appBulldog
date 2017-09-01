@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="layout_marginTop_1">10dp</dimen>
-    <dimen name="layout_marginTop_2">10dp</dimen>
-    <dimen name="layout_width_linearLayout">350dp</dimen>
-    <dimen name="layout_width_Button">200dp</dimen>
-    <dimen name="layout_height_Button">140dp</dimen>
-    <dimen name="layout_height_background_RelativeLayout_2">194dp</dimen>
+    <dimen name="marginTop_linearLayout">10dp</dimen>
+    <dimen name="height_linearLayout">140dp</dimen>
 </resources>
